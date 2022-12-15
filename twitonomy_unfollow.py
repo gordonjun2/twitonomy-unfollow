@@ -68,6 +68,8 @@ if current_url.split('https://')[1].split('.')[0] == 'twitter':
         password_input = WebDriverWait(driver, 5).until(EC.visibility_of_element_located((By.XPATH, "//*[@class='r-30o5oe r-1niwhzg r-17gur6a r-1yadl64 r-deolkf r-homxoj r-poiln3 r-7cikom r-1ny4l3l r-t60dpp r-1dz5y72 r-fdjqy7 r-13qz1uu']")))
         password_input.send_keys(password, Keys.ENTER)
     else:
+        email_input = WebDriverWait(driver, 5).until(EC.visibility_of_element_located((By.XPATH, "//*[@class='r-30o5oe r-1niwhzg r-17gur6a r-1yadl64 r-deolkf r-homxoj r-poiln3 r-7cikom r-1ny4l3l r-t60dpp r-1dz5y72 r-fdjqy7 r-13qz1uu']")))
+        email_input.send_keys(email, Keys.ENTER)
         password_input = WebDriverWait(driver, 5).until(EC.visibility_of_element_located((By.XPATH, "//*[@class='r-30o5oe r-1niwhzg r-17gur6a r-1yadl64 r-deolkf r-homxoj r-poiln3 r-7cikom r-1ny4l3l r-t60dpp r-1dz5y72 r-fdjqy7 r-13qz1uu']")))
         password_input.send_keys(password, Keys.ENTER)
 
